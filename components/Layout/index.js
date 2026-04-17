@@ -1,24 +1,20 @@
+import React, { useEffect, useState } from "react";
 
-import React, { useEffect, useState } from "react"
-
-
-import { NavBar, Footer, Header, DomHead } from ".."
-import { ResponsiveNavbar } from "../Navbar"
-
+import { NavBar, Footer, Header, DomHead } from "..";
+import { ResponsiveNavbar } from "../Navbar";
 
 function Layout({ children }) {
-
-  const [windowWidth, setWindowWidth] = useState(0)
+  const [windowWidth, setWindowWidth] = useState(0);
 
   useEffect(() => {
-    setWindowWidth(window.innerWidth)
+    setWindowWidth(window.innerWidth);
     window.addEventListener("resize", () => {
-      setWindowWidth(window.innerWidth)
-    })
-  }, [windowWidth])
+      setWindowWidth(window.innerWidth);
+    });
+  }, [windowWidth]);
 
   return (
-    <div className={`w-screen h-screen`}>
+    <div className={`w-screen h-screen bg-[#0F172A]`}>
       <DomHead />
       <Header>
         <NavBar />
@@ -27,8 +23,7 @@ function Layout({ children }) {
       {windowWidth <= 700 && <ResponsiveNavbar />}
       {/* <Footer /> */}
     </div>
-  )
+  );
 }
 
-export default Layout
-
+export default Layout;

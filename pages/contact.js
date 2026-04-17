@@ -1,15 +1,14 @@
 import React, { useContext, useState } from "react";
-import Container from "../Container/index.js";
+import  Container  from "../components/Container/index.js";
 import { AiFillMessage, AiOutlineClose } from "react-icons/ai";
-import { FaArrowRight } from "react-icons/fa";
-import DataContext from "../../context/DataContext";
+import DataContext from "../context/DataContext.js";
 import emailjs from "@emailjs/browser";
-import { Notification, validateEmail } from "../../helpers/index.js";
+import { Notification, validateEmail } from "../helpers/index.js";
 import {
   EMAILJS_TEMPLATE_ID,
   EMAILJS_SERVICE_ID,
   EMAILJS_PUBLIC_KEY,
-} from "../../config";
+} from "../config/index.js";
 
 const notif = new Notification(3000);
 
@@ -17,58 +16,46 @@ function Contact() {
   const { contactActive, closeContactForm, openContactForm } =
     useContext(DataContext);
 
-  console.log("look", {
-    Container,
-    DataContext,
-    Notification,
-    validateEmail,
-  });
-
   return (
-    <div className="relative z-10">
-      <div className="w-screen h-auto p-5 bg-[#0F172A] relative before:content-[''] before:absolute before:inset-0 before:bg-[radial-gradient(circle_at_bottom,rgba(34,197,94,0.12),transparent_60%)] before:pointer-events-none ">
-        <Container>
-          <div className="w-full h-auto flex flex-col items-start justify-start py-[50px] mb-[20px] md:py-5 ">
-            <h1
-              data-aos="fade-right"
-              className="text-[28px] md:text-[36px] font-semibold text-[#E2E8F0] leading-snug"
-            >
-              Let Make The Impossible{" "}
-              <span className="text-[#22C55E] font-extrabold">Possible.</span>
-            </h1>
-            <br />
-            <a id="contact"></a>
-            <p data-aos="fade-right" className=" text-[16px] text-[#94A3B8] ">
-              Start by{" "}
-              <span
-                className=" text-[#38BDF8] underline cursor-pointer hover:text-[#22C55E] transition "
-                onClick={openContactForm}
-              >
-                saying hi
-              </span>
-            </p>
-          </div>
-        </Container>
-
-        {/* contact form */}
-        <ContactForm
-          closeContactForm={closeContactForm}
-          contactActive={contactActive}
-        />
-
-        <div
-          id="floating-btn"
-          className="fixed bottom-20 right-5 z-[100] flex flex-col items-center justify-center md:bottom-10 "
-        >
-          <span
-            className={`flex flex-col items-center justify-center p-[12px] bg-[#1E293B]/70 backdrop-blur-md border border-slate-700/50 rounded-full shadow-lg hover:shadow-[0_0_20px_rgba(34,197,94,0.3)] border-green-2003 transition-all scale-[.80] hover:scale-[.95] cursor-pointer `}
-          >
-            <AiFillMessage
-              className="text-[30px] text-[#22C55E] "
+    <div className="w-screen bg-dark-300 h-auto p-2 md:p-5 ">
+      <Container>
+        <div className="w-full h-auto flex flex-col items-start justify-start py-[50px] mb-[20px] md:py-5 ">
+          <h1 data-aos="fade-right" className="text-[30px] font-thin ">
+            Let Make The Impossible{" "}
+            <span className="text-green-200 font-extrabold">Possible.</span>
+          </h1>
+          <br />
+          <a id="contact"></a>
+          <p data-aos="fade-right" className=" text-[20px] ">
+            Start by{" "}
+            <span
+              className=" text-green-200 underline cursor-pointer "
               onClick={openContactForm}
-            />
-          </span>
+            >
+              saying hi
+            </span>
+          </p>
         </div>
+      </Container>
+
+      {/* contact form */}
+      <ContactForm
+        closeContactForm={closeContactForm}
+        contactActive={contactActive}
+      />
+
+      <div
+        id="floating-btn"
+        className="fixed bottom-20 right-5 z-[100] flex flex-col items-center justify-center md:bottom-10 "
+      >
+        <span
+          className={`flex flex-col items-center justify-center p-[12px] bg-dark-400 rounded-[50%] border-green-2003 transition-all scale-[.80] hover:scale-[.95] cursor-pointer `}
+        >
+          <AiFillMessage
+            className="text-[30px] text-green-200 "
+            onClick={openContactForm}
+          />
+        </span>
       </div>
     </div>
   );
@@ -163,7 +150,7 @@ function ContactForm({ contactActive, closeContactForm }) {
   return (
     <div className="w-screen ">
       <div
-        className={`w-[380px] ${contactActive ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10 pointer-events-none"} transition-all duration-300 max-h-[450px] bg-[#1E293B]/80 backdrop-blur-xl border border-slate-700/50 rounded-xl shadow-[0_0_40px_rgba(0,0,0,0.4)] z-[999] fixed bottom-[90px] right-1 px-3 md:right-5 md:bottom-[20px] md:w-[350px]`}
+        className={`w-[380px] ${contactActive ? "h-[100vh]" : "h-0 overflow-hidden"} max-h-[450px] bg-dark-300 shadow-xl z-[999] fixed bottom-[90px] right-1 px-3 rounded-md transition-all md:right-5 md:bottom-[20px] md:w-[350px]`}
         id="form"
       >
         <div
@@ -172,13 +159,13 @@ function ContactForm({ contactActive, closeContactForm }) {
         >
           <h1 className="text-[20px] py-4 ">Contact Me</h1>
           <AiOutlineClose
-            className={`p-2 text-[35px] absolute top-[-16px] right-[-5px] bg-[#0F172A] text-[#EF4444] border border-red-500/40 hover:bg-red-500 hover:text-white transition rounded-[50%] cursor-pointer ${contactActive ? "flex" : "hidden"} `}
+            className={`p-2 text-[35px] absolute top-[-16px] right-[-5px] text-red-200 bg-red-900 rounded-[50%] cursor-pointer ${contactActive ? "flex" : "hidden"} `}
             onClick={closeContactForm}
           />
         </div>
         <div
           id="inputs"
-          className="w-full flex flex-col items-start justify-start mb-4"
+          className="w-full flex flex-col items-start justify-start"
         >
           <input
             type="text"
@@ -192,7 +179,7 @@ function ContactForm({ contactActive, closeContactForm }) {
           <input
             type="email"
             name="email"
-            className="w-full px-2 py-[12px] mb-4 rounded-md bg-[#0F172A]/70 border border-slate-700/50 text-[#E2E8F0] placeholder-[#64748B] focus:border-[#38BDF8] focus:ring-1 focus:ring-[#38BDF8] transition outline-none "
+            className="w-full px-2 py-[12px] mb-4 rounded-md bg-[#0F172A]/70 border border-slate-700/50 text-[#E2E8F0] placeholder-[#64748B] focus:border-[#38BDF8] focus:ring-1 focus:ring-[#38BDF8] transition outline-none  "
             placeholder="johndoe@mail.com"
             value={userInput.email}
             onChange={handleInput}

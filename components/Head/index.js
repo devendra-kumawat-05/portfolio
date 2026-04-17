@@ -13,16 +13,16 @@ export default function DomHead({ pageName = "Home Page" }) {
             {/* Open Graph / Facebook */}
             <meta property="og:type" content="website" />
             <meta property="og:url" content="https://github.com/benrobo/portfolio-v3/" />
-            <meta property="og:title" content="Benrobo- Personal Portfolio" />
-            <meta property="og:description" content="Generating of portfolio just got easier. Using BaayMax and a single command, you're on set." />
-            <meta property="og:image" content="https://github.com/Benrobo/baaymax-assets/blob/main/app.png?raw=true" />
+            <meta property="og:title" content="Devendra Kumawat- Personal Portfolio" />
+            <meta property="og:description" content="Generating of portfolio just got easier.." />
+            {/* <meta property="og:image" content="https://github.com/Benrobo/baaymax-assets/blob/main/app.png?raw=true" /> */}
 
             {/* <!-- Twitter --> */}
             <meta property="twitter:card" content="summary_large_image" />
             <meta property="twitter:url" content="https://metatags.io/" />
-            <meta property="twitter:title" content="Benrobo- Personal Portfolio" />
-            <meta property="twitter:description" content="Generating of portfolio just got easier. Using BaayMax and a single command, you're on set." />
-            <meta property="twitter:image" content="https://github.com/Benrobo/baaymax-assets/blob/main/app.png?raw=true" />
+            <meta property="twitter:title" content="Devendra Kumawat- Personal Portfolio" />
+            <meta property="twitter:description" content="Generating of portfolio just got easier. " />
+            {/* <meta property="twitter:image" content="https://github.com/Benrobo/baaymax-assets/blob/main/app.png?raw=true" /> */}
 
             {/* meta tags end */}
             <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

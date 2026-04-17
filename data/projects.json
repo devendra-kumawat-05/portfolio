@@ -1,53 +1,53 @@
 {
-    "projects":[
-        {
-            "title": "BaayMax",
-            "imageUrl": "https://github.com/Benrobo/baaymax-cli/raw/master/readmeImg/cli.png?raw=true",
-            "project_url": "https://github.com/Benrobo/baaymax",
-            "description": "Generate developer portfolio site from your github profile.",
-            "tags": [ "react", "nodejs" ]
-        },
-        {
-            "title": "Babcock Ride",
-            "imageUrl": "https://raw.githubusercontent.com/Benrobo/babcock-uber/main/readmeImg/babcock-profile.png",
-            "project_url": "https://github.com/Benrobo/babcock-uber",
-            "description": "Get a ride quickly as possible using this app meant for the babcock university.",
-            "tags": [ "react", "postgresql", "nodejs" ]
-        },
-        {
-            "title": "E-Workflow",
-            "imageUrl": "https://raw.githubusercontent.com/Benrobo/e-workflow-client/main/readmeImg/dashboard.png",
-            "project_url": "https://github.com/Benrobo/e-workflow-client",
-            "description": "Automate document submission within a school.",
-            "tags": [ "react", "postgresql", "nodejs" ]
-        },
-        {
-            "title": "Quickr",
-            "imageUrl": "https://raw.githubusercontent.com/Benrobo/quickr/main/readmeImg/quickr1.png",
-            "project_url": "https://github.com/Benrobo/quickr",
-            "description": "Generate unique resume / CV.",
-            "tags": [ "react", "nodejs" ]
-        },
-        {
-            "title": "PayRill",
-            "imageUrl": "https://camo.githubusercontent.com/b9b0a0e9957c3fe08d47cbacbd36dd87242837f5ce88f00ed9db4cd3da8fd3d9/68747470733a2f2f643131327936393861646975327a2e636c6f756466726f6e742e6e65742f70686f746f732f70726f64756374696f6e2f736f6674776172655f70686f746f732f3030322f3232312f3931352f64617461732f67616c6c6572792e6a7067",
-            "project_url": "https://github.com/Benrobo/payrill",
-            "description": "Ease Checkout Processes and Reduce queues in shopping stores application powered by Rapyd API.",
-            "tags": [ "react", "nodejs", "rapyd api" ]
-        },
-        {
-            "title": "RayPal",
-            "imageUrl": "https://camo.githubusercontent.com/db234641b926872b7e4cd67a3daae83c4e937295922e4176feacf83b0d1975b8/68747470733a2f2f6368616c6c656e6765706f73742d73332d6368616c6c656e6765706f73742e6e6574646e612d73736c2e636f6d2f70686f746f732f70726f64756374696f6e2f736f6674776172655f70686f746f732f3030322f3033362f3130312f64617461732f67616c6c6572792e6a7067",
-            "project_url": "https://github.com/Benrobo/Rapyd-Payment-app",
-            "description": "Payment Infrastructure application powered by Rapyd API.",
-            "tags": [ "react", "nodejs", "rapyd api" ]
-        },
-         {
-            "title": "Tymonial",
-            "imageUrl": "https://raw.githubusercontent.com/Benrobo/tymonial-app/main/github-img/formUI.png",
-            "project_url": "https://github.com/Benrobo/tymonial-app",
-            "description": "An easy way to collect users feedback into yout web app.",
-            "tags": [ "react", "nodejs", "linode server" ]
-        }
-    ]
+  "projects": [
+    {
+      "title": "Resumely",
+      "imageUrl": "https://github.com/devendra-kumawat-05/Resumely/blob/main/frontend/public/logo.svg?raw=true",
+      "project_url": "https://resumely-frontend.onrender.com",
+      "description": "Create, edit, download and share your resume in seconds with our AI-powered resume builder. Save time and focus on what matters.",
+      "tags": ["React.Js", "Node.Js", "MongoDB"]
+    },
+    {
+      "title": "Divine Care",
+      "imageUrl": "https://github.com/devendra-kumawat-05/Divine-Care/blob/main/frontend/src/assets/divine-care-high-resolution-logo.png?raw=true",
+      "project_url": "https://divine-care-frontend.onrender.com",
+      "description": "Book appointment with the trusted doctors through our extensive list of doctors, and get started on your health journey.",
+      "tags": ["React.Js", "Node.Js", "MongoDB"]
+    },
+    {
+      "title": "Find Media",
+      "imageUrl": "https://vida.id/hubfs/Contoh%20media%20digital_.jpg",
+      "project_url": "https://find-media.vercel.app",
+      "description": "A media discovery platform that allows users to explore a wide range of content including images, videos, and more.",
+      "tags": ["React.Js", "Redux-Tookit"]
+    },
+    {
+      "title": "To-Do List",
+      "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBWcy97F4y1G-xv67R3V4m6hEWYDanphxO4g&s",
+      "project_url": "https://to-do-list-devendra.vercel.app",
+      "description": "A simple and efficient task management platform that helps users organize their daily activities and stay on top of their to-do list.",
+      "tags": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      "title": "Rock-Paper-Scissors",
+      "imageUrl": "https://media2.dev.to/dynamic/image/width=1000,height=420,fit=cover,gravity=auto,format=auto/https%3A%2F%2Fthepracticaldev.s3.amazonaws.com%2Fi%2Fvg6mmkv6hipscpi7pl0h.png",
+      "project_url": "https://rock-paper-scissors-devendra.vercel.app",
+      "description": "An interactive web-based Rock Paper Scissors game that lets users play against the computer in a fun and engaging way.",
+      "tags": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      "title": "Tic-Tac-Toe",
+      "imageUrl": "https://img.poki-cdn.com/cdn-cgi/image/q=78,scq=50,width=314,height=314,fit=cover,f=auto/d07c1db617a36898b5e8c71013d228d11003eb36d7150b7abfe988fe097c7d66/tic-tac-toe-3.png",
+      "project_url": "https://tic-tac-toe-devendra.vercel.app",
+      "description": "A simple and interactive Tic Tac Toe web application that allows users to play the classic game in a clean and responsive interface.",
+      "tags": ["HTML", "CSS", "JavaScript"]
+    },
+    {
+      "title": "Expense Tracker",
+      "imageUrl": "https://static.wixstatic.com/media/c5c8f5_87ecbb4b855e4468ab89d177fc73a80b~mv2.jpg/v1/fill/w_980,h_980,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c5c8f5_87ecbb4b855e4468ab89d177fc73a80b~mv2.jpg",
+      "project_url": "https://expense-tracker-devendra.vercel.app",
+      "description": "A simple expense tracker that helps users manage their daily finances with ease. It allows users to record their expenses",
+      "tags": ["HTML", "CSS", "JavaScript"]
+    }
+  ]
 }
