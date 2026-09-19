@@ -2,14 +2,14 @@
   "projects": [
     {
       "title": "Resumely",
-      "imageUrl": "https://github.com/devendra-kumawat-05/Resumely/blob/main/frontend/public/logo.svg?raw=true",
+      "imageUrl": "https://github.com/devendrakumawatt/Resumely/blob/main/frontend/public/logo.svg?raw=true",
       "project_url": "https://resumely-frontend.onrender.com",
       "description": "Create, edit, download and share your resume in seconds with our AI-powered resume builder. Save time and focus on what matters.",
       "tags": ["React.Js", "Node.Js", "MongoDB"]
     },
     {
       "title": "Divine Care",
-      "imageUrl": "https://github.com/devendra-kumawat-05/Divine-Care/blob/main/frontend/src/assets/divine-care-high-resolution-logo.png?raw=true",
+      "imageUrl": "https://github.com/devendrakumawatt/Divine-Care/blob/main/frontend/src/assets/divine-care-high-resolution-logo.png?raw=true",
       "project_url": "https://divine-care-frontend.onrender.com",
       "description": "Book appointment with the trusted doctors through our extensive list of doctors, and get started on your health journey.",
       "tags": ["React.Js", "Node.Js", "MongoDB"]

@@ -95,7 +95,7 @@ function Refer() {
         Crafted with 💖 by{" "}
         <a
           target="_blank"
-          href="https://github.com/devendra-kumawat-05"
+          href="https://github.com/devendrakumawatt"
           className="text-[#22C55E] hover:text-[#38BDF8] transition underline"
         >
           Devendra Kumawat
